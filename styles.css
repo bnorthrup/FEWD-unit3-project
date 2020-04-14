@@ -1,0 +1,137 @@
+/*=================================
+  Main Styles @ 320px
+ ==================================*/
+ * {
+     box-sizing: border-box;
+ }
+ main {
+     max-width: 320px;
+     margin: 0 auto;
+ }
+ body {
+     font-family: "Nunito", Spectral, Times New Roman;
+     color: rgb(38, 50, 80);
+     letter-spacing: -0.05em;
+ }
+ header {
+    background: rgb(38, 50, 80);
+    height: 5em;
+    color: white;
+    display: flex;
+}
+
+h2, 
+p, 
+fieldset {  
+   font-family: "Spectral";
+}
+
+h2 {
+    margin: 16px 0 0;
+    font-size: 1.3em;
+}
+
+p {
+    margin: 6px 0 0;
+    padding-bottom: 16px;
+    flex-grow: 1;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 16px auto;
+}
+
+legend {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+
+ .title {
+    margin: auto;
+    font-size: 1.65em;
+    text-transform: uppercase;
+}
+
+.form-title {
+    display: flex;
+    flex-direction: Column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.form-title p {
+    border-bottom: solid 4px rgb(38, 50, 80);
+}
+
+.divider {
+    border-bottom: solid 2px rgb(38, 50, 80);
+    margin: 2px auto;
+    width: 100%;
+}
+ 
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact > div {
+    margin: 8px 0;
+}
+
+.contact > div input, select {
+    font-family: "nunito";
+    border: none;
+    border-radius: 4px 4px 0 0;
+    background: #E8E8E8;
+    width: 100%;
+    height: 56px;
+    margin: 8px auto;
+    border-bottom: solid 2px #909090;
+    padding: 0 8px;
+    
+}
+.contact > div input::placeholder {
+    color: rgba(38, 50, 80, .6);
+    font-style: italic;
+}
+
+.contact > div input:hover, select:hover {
+    background-color: rgba(151, 151, 151, 0.301);
+    
+}
+
+.contact > div input:focus, select:focus {
+    box-shadow: inset 2px 2px 4px #909090; 
+}
+
+.alright::placeholder {
+    text-align: right;
+}
+
+.contact div:nth-last-child(1) {
+    width: 50%;
+}
+
+
+
+/*=================================
+  Media Queries @ 768px
+ ==================================*/
+
+ @media (min-width: 768px) {
+
+   
+ }
+
