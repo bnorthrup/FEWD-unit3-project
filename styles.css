@@ -5,6 +5,7 @@
      box-sizing: border-box;
  }
 
+ 
  main {
      max-width: 320px;
      margin: 0 auto;
@@ -56,7 +57,17 @@ legend {
 }
 
 footer{ 
+    height: 100px;
+    text-align: center;
     
+}
+
+span {
+ margin-top: 24px;
+ display: inline-block;
+ font-style: italic;
+ color: #cfd8dc;
+
 }
 
  .title {
@@ -87,6 +98,7 @@ footer{
 .box {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
 }
 
 
@@ -109,20 +121,23 @@ textarea, .contact > div input, select {
 
 textarea {
     margin-top: 16px;
+    padding-top: 4px;
 } 
 
 .contact > div input::placeholder {
     color: rgba(38, 50, 80, .6);
     font-style: italic;
+    font-size: .8em;
 }
 
-.contact > div input:hover, select:hover {
+textarea:hover, .contact > div input:hover, select:hover {
     background: rgba(151, 151, 151, 0.301);
 }
 
-.contact > div input:focus, select:focus {
+textarea:focus, .contact > div input:focus, select:focus {
     width: 100%;
     box-shadow: inset 2px 2px 4px #909090;
+    border: 1px solid #66ffa6;
     
 }
 
