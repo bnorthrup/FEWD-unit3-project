@@ -9,7 +9,7 @@
     <link rel="icon" href="img/assignment-white-18dp.svg">
     <title>The Code Review</title>
 </head>
-<body>
+<body class="box">
     <header>
         <h1 class="title">The Code Review</h1>
     </header>
@@ -53,6 +53,7 @@
                 <div>
                     <label for="state">State</label><br>
                     <select id="state" name="user_state" placeholder="Choose State" required>
+                        <option value="">--Choose State--</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -134,7 +135,7 @@
             <input type="checkbox" id="JS" name="news" value="javascript">
             <label for="JS">Javascript News</label>
             </div>
-            <p>Newsletter format</p>
+            <p class="spacer">Newsletter format</p>
             <div>
                 <input type="radio" id="html" name="format" value="html">
                 <label for="html">HTML</label>
@@ -148,9 +149,15 @@
             <label for="othertopics">Other topics you'd like to hear about</label>
             <textarea id="othertopics" name="other_topic"></textarea>
         </fieldset>
-        <input type="submit" value="Sign Up">
+
+        <div class="box">
+            <input type="submit" value="Sign Up">
+        </div>
 
     </form>
+    <footer>
+        <span>Copyright The Code Review</span>
+    </footer>
     </main>
 
 

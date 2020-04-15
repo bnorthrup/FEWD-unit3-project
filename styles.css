@@ -4,10 +4,12 @@
  * {
      box-sizing: border-box;
  }
+
  main {
      max-width: 320px;
      margin: 0 auto;
  }
+
  body {
      font-family: "Nunito", Spectral, Times New Roman;
      color: rgb(38, 50, 80);
@@ -34,7 +36,6 @@ h2 {
 p {
     margin: 6px 0 0;
     padding-bottom: 16px;
-    flex-grow: 1;
 }
 
 form {
@@ -54,6 +55,9 @@ legend {
     margin-bottom: 8px;
 }
 
+footer{ 
+    
+}
 
  .title {
     margin: auto;
@@ -90,7 +94,7 @@ legend {
     margin: 8px 0;
 }
 
-.contact > div input, select {
+textarea, .contact > div input, select {
     font-family: "nunito";
     border: none;
     border-radius: 4px 4px 0 0;
@@ -100,20 +104,26 @@ legend {
     margin: 8px auto;
     border-bottom: solid 2px #909090;
     padding: 0 8px;
-    
+ 
 }
+
+textarea {
+    margin-top: 16px;
+} 
+
 .contact > div input::placeholder {
     color: rgba(38, 50, 80, .6);
     font-style: italic;
 }
 
 .contact > div input:hover, select:hover {
-    background-color: rgba(151, 151, 151, 0.301);
-    
+    background: rgba(151, 151, 151, 0.301);
 }
 
 .contact > div input:focus, select:focus {
-    box-shadow: inset 2px 2px 4px #909090; 
+    width: 100%;
+    box-shadow: inset 2px 2px 4px #909090;
+    
 }
 
 .alright::placeholder {
@@ -123,6 +133,36 @@ legend {
 .contact div:nth-last-child(1) {
     width: 50%;
 }
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 8px;
+}
+
+
+
+input[type="submit"] {
+    width: 100%;
+    background: #00bfa5;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    align-self: center;
+    padding: 16px 0;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-family: "spectral";
+}
+
+.spacer {
+    margin-top: 16px;
+}
+
+label[for="othertopics"] {
+    padding-top: 16px;
+    display: block;
+}
+
 
 
 
